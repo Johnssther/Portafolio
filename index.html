@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <title>Panel de Admininstración</title>
+    <link rel="shortcut icon" href="https://biblioteca.acropolis.org/wp-content/uploads/2015/08/7.png">
+
+</head>
+<body>
+    <section class="progress-bar">
+        <div class="progress-bar__progress">
+            <span style="width:0%"></span>
+        </div>
+    </section>
+    
+    <aside class="sidebar" id="sidebar">
+        <header class="sidebar__header">
+            <div class="sidebar__header-brand">
+                PORTAFOLIO
+            </div>
+            <div class="sidebar__header-icono">
+                <a id="toggle-btn"><i class="fas fa-bars"></i></a>
+            </div>
+        </header>
+        <section class="sidebar__description">
+            <div class="sidebar__description-data">
+                <p class="sidebar__description-name">JOHN ALEJANDRO HERNANDEZ</p>
+                <p class="sidebar__description-job">Desarrollador de software</p>
+            </div>
+            <div></div>
+            <div class="sidebar__description-profile">
+                <div class="sidebar__description-profile-online"></div>
+                <P>JA</P>
+            </div>
+            <!-- Image -->
+        </section>
+        <section class="sidebar__section">
+            <p class="sidebar__section-menu">MENÚ</p>
+            <p class="sidebar__section-textonline"><i class="fas fa-signal"></i> online</p>
+        </section>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-list-item">
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i> PORTAFOLIO
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-list-item">
+                    <a href="#">
+                        <i class="fas fa-book-reader"></i> EXPERIENCIA
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-list-item">
+                    <a href="#">
+                        <i class="fas fa-mobile"></i> CONTACTO
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+               
+            </ul>
+        </nav>
+        <footer class="sidebar__footer">
+            <!-- Footer -->
+        </footer>
+    </aside>
+    <header class="header">
+        <div class="sidebar__header-brand color-grey">
+            PORTAFOLIO
+        </div>
+        <div class="btnToggle" style="color: black;">
+            <a id="toggle-btn1"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+    <section class="section" id="wrapper">
+        <div class="container">
+            <div class="section__header">
+                JOHN ALEJANDRO HERNÁNDEZ RODRIGUEZ
+            </div>
+            <div class="section__portafolio">PORTAFOLIO</div>
+            <div class="section__contacto">CONTACTO</div>
+        </div>
+    </section>
+
+    <script>
+        let btnToggle = document.getElementById('toggle-btn');
+        btnToggle.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('wrapper').classList.toggle('section-active');
+        });
+        let btnToggle1 = document.getElementById('toggle-btn1');
+        btnToggle1.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('wrapper').classList.toggle('section-active');
+        });
+
+        // changeMediaQuery
+        const changeMediaQuery = (mql) => {
+            if(mql.matches) {
+                console.log('pantAlla pequeña');
+                document.getElementById('sidebar').classList.remove('active');
+                document.getElementById('wrapper').classList.remove('section-active');
+            } else {
+                document.getElementById('sidebar').classList.add('active');
+                document.getElementById('wrapper').classList.add('section-active');
+            }
+        }
+        let mql = window.matchMedia("screen and (max-width: 1200px)");
+        changeMediaQuery(mql)
+        mql.addListener(changeMediaQuery);
+    </script>
+</body>
+</html>
