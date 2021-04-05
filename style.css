@@ -247,7 +247,7 @@ li {
     background-size: 100% 50rem;*/
     transition: all var(--time-transition);
 }
-.section__header video {
+.section__header video {  
     width: 100%;
 }
 .section__header p {
