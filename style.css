@@ -238,7 +238,7 @@ li {
 .section__header {
     width: 100%;
     height: auto;
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: center;
     text-align: center;
