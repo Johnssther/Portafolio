@@ -208,6 +208,7 @@ li {
     border-bottom: 1px solid #c0baba;
     position: fixed;
     top: 0;
+    z-index: 50;
     
 }
 .btnToggle, .btnToggle a {
@@ -236,20 +237,24 @@ li {
 
 .section__header {
     width: 100%;
-    height: 50rem;
-    background: #151515;/*var(--bg-secondary);*/
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: bold;
     text-align: center;
-    background-image: url("image2.jpg");
+    /*background-image: url("image2.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 50rem;
+    background-size: 100% 50rem;*/
     transition: all var(--time-transition);
-
+}
+.section__header video {
+    width: 100%;
+}
+.section__header p {
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
 }
 .section__portafolio {
     width: 100%;
@@ -275,7 +280,13 @@ li {
     .section-active {
         margin-left: 0rem;
     }
-    .section__header {
-        background-image: url("image2_mobil.jpg");
+    .sidebar {
+        width: 100%;
+    }
+    .section__header p {
+        position: absolute;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: bold;
     }
 }
