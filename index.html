@@ -86,38 +86,82 @@
                 <p>ALEJANDRO HERNÁNDEZ</p>
             </div>
             <div class="section__portafolio">
-                
+                <p>Herramientas</p>
+                <div class="section__portafolio-cards">
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/react.jpg" alt="reactjs">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            React
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/vue.jpg" alt="vue">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            Vue
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/laravel.png" alt="laravel">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            laravel
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="section__portafolio-cards">
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/react.jpg" alt="reactjs">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            React
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/vue.jpg" alt="vue">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            Vue
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                    <div class="section__portafolio-cards-card">
+                        <div class="section__portafolio-cards-card-header">
+                            <img src="img/laravel.png" alt="laravel">
+                        </div>
+                        <div class="section__portafolio-cards-card-body">
+                            laravel
+                        </div>
+                        <div class="section__portafolio-cards-card-footer">
+                            3
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="section__contacto">CONTACTO</div>
         </div>
     </section>
 
-    <script>
-        let btnToggle = document.getElementById('toggle-btn');
-        btnToggle.addEventListener('click', () => {
-            document.getElementById('sidebar').classList.toggle('active');
-            document.getElementById('wrapper').classList.toggle('section-active');
-        });
-        let btnToggle1 = document.getElementById('toggle-btn1');
-        btnToggle1.addEventListener('click', () => {
-            document.getElementById('sidebar').classList.toggle('active');
-            document.getElementById('wrapper').classList.toggle('section-active');
-        });
-
-        // changeMediaQuery
-        const changeMediaQuery = (mql) => {
-            if(mql.matches) {
-                console.log('pantAlla pequeña');
-                document.getElementById('sidebar').classList.remove('active');
-                document.getElementById('wrapper').classList.remove('section-active');
-            } else {
-                document.getElementById('sidebar').classList.add('active');
-                document.getElementById('wrapper').classList.add('section-active');
-            }
-        }
-        let mql = window.matchMedia("screen and (max-width: 1200px)");
-        changeMediaQuery(mql)
-        mql.addListener(changeMediaQuery);
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
