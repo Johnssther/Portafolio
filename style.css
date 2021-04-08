@@ -329,6 +329,15 @@ li {
     justify-content: center;
 }
 
+.btn {
+    padding: 1rem 2rem;
+    font-size: 20px;
+    background-color: #357EDD;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+ }
 
 @media (max-width: 992px) {
     .section-active {
