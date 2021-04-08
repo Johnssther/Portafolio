@@ -1,8 +1,8 @@
 :root {
     --time-transition: 1s;
-    --bg-primary: #3814bd;
+    --bg-primary: #0e467a;
     /*--bg-primary: #14054b;*/
-    --bg-primary-light: #3919af;
+    --bg-primary-light: #260e7a;
     --bg-secondary: green;
     --bg-white: #f0f2f5;
     --bg-dark: #313131;
@@ -92,7 +92,7 @@ li {
     gap: 1rem;
     justify-content:space-evenly;
     align-items: center;
-    border-bottom: 1px solid #235fb8;
+    border-bottom: 1px solid var(--bg-primary);
     /*box-shadow:  0px 1px 3px #333333;*/
     z-index: 100;
 }
