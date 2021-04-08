@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carta-box {
+            width: 200px;
+            height: 250px;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .carta-box:hover .carta {
+            transform: rotateY(180deg);
+        }
+
+        .carta {
+            transform-style: preserve-3d;
+            transition: all 1s linear;
+        }
+
+        .cara {
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .cara.detras {
+            background: orange;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="carta-box">
+            <div class="carta">    
+            <div class="cara">
+                <img src="https://placeimg.com/200/250/tech" width="200" height="250px">
+            </div>
+            <div class="cara detras">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor possimus minus, neque id, autem qui reprehenderit ad tempora, magnam at voluptates veniam. Fuga, deleniti. Ipsam a hic eius blanditiis adipisci?
+            </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
