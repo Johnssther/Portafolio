@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
+
+/* ==================
+    VARIABLES
+==================*/
+
+:root {
+    $theme: 0;
+
+    @if $theme == 1 {
+        
+        --font: 'Open Sans', sans-serif;
+        --fondo: #212121;
+        --wide-container: 1200px;
+        --white: #353535;
+        --color: #fff;
+        --bg-primary: rgb(76, 76, 77);
+    } @else {
+        
+        --font: 'Open Sans', sans-serif;
+        --fondo: #e0e0e0;
+        --wide-container: 1200px;
+        --white: #fff;
+        --color: #000;
+        --bg-primary: #0e467a;
+    }
+}

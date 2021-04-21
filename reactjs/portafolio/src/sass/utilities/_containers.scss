@@ -1,0 +1,19 @@
+/* ==================
+    CONTAINERS
+==================*/
+.container {
+    max-width: 90%;
+    width: var(--wide-container);
+    margin: 20px auto;
+    overflow: hidden;
+}
+.wide-container {
+    padding: 0 40px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.big-container {
+    padding: 0 0px;
+    margin: 0px auto;
+    overflow: hidden;
+}

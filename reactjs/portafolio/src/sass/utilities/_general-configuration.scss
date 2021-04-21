@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: var(--fondo);
+    font-family: var(--font);
+    color: var(--color);
+    width: 100vw;
+    height: 100vw; 
+}
+
+p {
+    line-height: 27px;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}

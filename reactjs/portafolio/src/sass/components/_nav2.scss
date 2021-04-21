@@ -1,0 +1,29 @@
+$time-transition: 1s;
+$bg-primary: #0e467a;
+$bg-primary-light: #260e7a;
+$bg-secondary: green;
+$bg-white: #f0f2f5;
+$bg-dark: #313131;
+$color:red;
+
+.header {
+    min-height: 4rem;
+    min-width: 100%;
+    background: #fff;
+    color: #000;
+    display: flex;  
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #c0baba;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    
+}
+.header__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:.7rem;
+    margin-left: 1rem;
+}

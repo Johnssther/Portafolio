@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { actions } from "../redux/actions/index";
+
 
 function Sidebar(props) {
-    const [active, setActive] = useState("active");
-
-    const toggle = () => {
-        setActive("");
-    }
+    const settings = useSelector((state) => state.settings);
+    const dispatch = useDispatch();
 
     return (
-        <aside className={`sidebar ${active}`} >
+        <aside className={`sidebar ${settings.toggle && 'active-toggle'}`} >
             <header className="sidebar__header">
                 <div className="sidebar__header-brand">
                     PORTAFOLIO
                 </div>
                 <div className="sidebar__header-icono">
-                    <button className="btn" onClick={()=> {toggle()}}><i className="fas fa-bars"></i></button>
+                    <span className="toggle" onClick={() => dispatch(actions.settings.toggle(!settings.toggle))}>
+                        <i className="fas fa-bars"></i>
+                    </span>
                 </div>
             </header>
             <section className="sidebar__description">
@@ -37,23 +39,19 @@ function Sidebar(props) {
                 <ul className="sidebar__nav-list">
                     <li className="sidebar__nav-list-item">
                         <a href="none">
-                            <i className="fas fa-briefcase"></i> PORTAFOLIO
-                            <i className="fas fa-angle-right"></i>
+                            <span><i className="fas fa-briefcase"></i></span><span>PORTAFOLIO </span>
                         </a>
                     </li>
                     <li className="sidebar__nav-list-item">
                         <a href="none">
                             <i className="fas fa-book-reader"></i> EXPERIENCIA
-                            <i className="fas fa-angle-right"></i>
                         </a>
                     </li>
                     <li className="sidebar__nav-list-item">
                         <a href="none">
                             <i className="fas fa-mobile"></i> CONTACTO
-                            <i className="fas fa-angle-right"></i>
                         </a>
                     </li>
-                
                 </ul>
             </nav>
             <footer className="sidebar__footer">

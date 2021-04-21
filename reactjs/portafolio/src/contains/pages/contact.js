@@ -2,20 +2,13 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className="section__contacto">
-        <div className="section__contacto-a">
-            CONTACTO
-        </div>
-        <div className="section__contacto-b">
-            <h3>Construyamos Soluciones Juntos</h3>
-            <p><b>Correo:</b> j.ahr@hotmail.com</p>
-            {/*<p><b>Teléfono/Whatsapp</b><a href="https://api.whatsapp.com/send?phone=573124224944" target="_blank">+57 3124224944</a></p>*/}
-            <p><b>Github</b> Johnssther</p>
-            <p><b>Linkendlin</b> JOHN </p>
-        </div>
+    <div className="big-container card-bg-primary text-center">
+      <h2 className="display-2 no-margin">Contacto</h2>
+      <h3>Construyamos Soluciones Juntos</h3>
+      <p><b>Github</b> Johnssther</p>
+      <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/alejandro-hernandez-3b28827a/" target="_blank" title="Ir al perfil de LinkedIn">John A. Hernandez</a></p>
     </div>
   );
 }
 
 export default Contact;
-

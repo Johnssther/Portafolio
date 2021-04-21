@@ -1,0 +1,26 @@
+/* ==================
+    Buttons
+==================*/
+
+.button {
+    background: #641ee7;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    transition: .3 ease all;
+}
+.button:hover {
+    background: #5114c2;
+}
+
+.button.green {
+    background: rgb(0, 160, 74);
+}
+.button.green:hover {
+    background: #00833d;
+}
