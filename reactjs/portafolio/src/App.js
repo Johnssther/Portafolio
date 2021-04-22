@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Layout from './contains/layout'
 
-import '../src/sass/theme.scss'
-import '../src/sass/style.scss'
+import '../src/sass/theme.css'
+import '../src/sass/style.css'
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -15,5 +15,3 @@ function App() {
 }
 
 export default App;
-
-

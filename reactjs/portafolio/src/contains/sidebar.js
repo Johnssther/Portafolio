@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { actions } from "../redux/actions/index";
-
+import cv from '../assets/documents/John Alejandro Hernandez Rodriguez.pdf';
 
 function Sidebar(props) {
     const settings = useSelector((state) => state.settings);
@@ -38,18 +38,51 @@ function Sidebar(props) {
             <nav className="sidebar__nav">
                 <ul className="sidebar__nav-list">
                     <li className="sidebar__nav-list-item">
-                        <a href="none">
-                            <span><i className="fas fa-briefcase"></i></span><span>PORTAFOLIO </span>
+                        <a href="none" target="_blank">
+                            <div className="sidebar__nav-list-contain">
+                                <div className="sidebar__nav-list-item-icon">
+                                    <i className="fas fa-briefcase"></i> 
+                                </div>
+                                <div className="sidebar__nav-list-item-title">
+                                    Portafolio
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li className="sidebar__nav-list-item">
-                        <a href="none">
-                            <i className="fas fa-book-reader"></i> EXPERIENCIA
+                        <a href="none" target="_blank">
+                            <div className="sidebar__nav-list-contain">
+                                <div className="sidebar__nav-list-item-icon">
+                                    <i className="fas fa-book-reader"></i> 
+                                </div>
+                                <div className="sidebar__nav-list-item-title">
+                                    Experiencia
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li className="sidebar__nav-list-item">
-                        <a href="none">
-                            <i className="fas fa-mobile"></i> CONTACTO
+                        <a href="none" target="_blank">
+                            <div className="sidebar__nav-list-contain">
+                                <div className="sidebar__nav-list-item-icon">
+                                    <i className="fas fa-mobile"></i> 
+                                </div>
+                                <div className="sidebar__nav-list-item-title">
+                                    Contacto
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li className="sidebar__nav-list-item">
+                        <a href={cv} target="_blank">
+                            <div className="sidebar__nav-list-contain">
+                                <div className="sidebar__nav-list-item-icon">
+                                    <i className="fas fa-file-pdf"></i> 
+                                </div>
+                                <div className="sidebar__nav-list-item-title">
+                                    cv
+                                </div>
+                            </div>
                         </a>
                     </li>
                 </ul>
