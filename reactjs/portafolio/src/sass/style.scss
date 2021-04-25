@@ -9,7 +9,8 @@
 @import "./utilities/helpers";
 @import "./utilities/fonts";
 @import "./utilities/containers";
-@import "./utilities/colors";
+@import "./utilities/animations";
+
 
 /* Components*/
 @import "./components/btn";
@@ -21,3 +22,6 @@
 @import "./components/progress";
 @import "./components/section";
 @import "./components/nav2";
+@import "./components/progressbar";
+
+@import "./utilities/colors";

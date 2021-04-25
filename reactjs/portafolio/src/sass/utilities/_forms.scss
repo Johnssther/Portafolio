@@ -19,3 +19,12 @@ form .input:focus{
     border: 1px solid #641ee7;
     outline: none;
 }
+
+form .textarea {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom: 20px;
+}

@@ -6,3 +6,9 @@
 .section-active {
     margin-left: 17rem;
 }
+
+@media (max-width: 992px) {
+    .section-active {
+        margin-left: 0rem;
+    }
+}

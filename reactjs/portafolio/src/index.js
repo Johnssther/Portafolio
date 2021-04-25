@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import {store, persistor} from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react'
+import Progressbar from '../src/components/progressbar';
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={'Loading...'} persistor={persistor}>
+    <PersistGate loading={<Progressbar />} persistor={persistor}>
 
       <React.StrictMode>
         <App />

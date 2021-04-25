@@ -1,7 +1,5 @@
-
-$bg-primary: var(--bg-primary);
-$bg-white: #fff;
 $time-transition: 1s;
+
 .sidebar {
     width: 17rem;
     background: #333333;
@@ -26,12 +24,12 @@ $time-transition: 1s;
 
 .sidebar__header {
     min-height: 4rem;
-    background: $bg-primary;
+    background: $bg-secondary;
     display: flex;
     gap: 1rem;
     justify-content:space-evenly;
     align-items: center;
-    border-bottom: 1px solid $bg-primary;
+    border-bottom: 1px solid $bg-secondary;
     z-index: 100;
 }
 .sidebar__header-brand {
@@ -47,7 +45,7 @@ $time-transition: 1s;
 
 .sidebar__description {
     min-height: 9rem;
-    background: $bg-primary;
+    background: $bg-secondary;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;

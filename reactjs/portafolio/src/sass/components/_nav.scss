@@ -1,5 +1,5 @@
 .nav {
-    background: var(--bg-primary);
+    background: $bg-primary;
     display: flex;
     flex-wrap: wrap;
 }
@@ -18,7 +18,7 @@
     transition: .3s ease all;
     font-size: 18px;
 }
-.nav a.activo,
+.nav a.active,
 .nav a:hover {
-    background: rgb(89, 59, 221);
+    background: $bg-secondary;
 }

@@ -9,7 +9,7 @@
     border-radius: 2rem;
 }
 .var__progress-fill {
-    background: var(--bg-primary);
+    background: $bg-primary;
     height: 1.7rem;
     display: flex;
     align-items: center;

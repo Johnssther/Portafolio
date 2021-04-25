@@ -1,3 +1,19 @@
 .bg-primary {
-    background: blue;
+    background: $bg-primary;
+}
+
+.bg-danger {
+    background: $bg-danger;
+}
+
+.bg-ligth {
+    background: #fff;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-dark {
+    color: #323232;
 }

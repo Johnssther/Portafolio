@@ -3,7 +3,7 @@
 ==================*/
 
 .button {
-    background: #641ee7;
+    background: $bg-primary;
     border: none;
     cursor: pointer;
     color: white;
@@ -15,12 +15,14 @@
     transition: .3 ease all;
 }
 .button:hover {
-    background: #5114c2;
+    background: $bg-primary;
+    opacity: .8;
 }
 
 .button.green {
-    background: rgb(0, 160, 74);
+    background: $bg-secondary;
 }
 .button.green:hover {
-    background: #00833d;
+    background: $bg-secondary;
+    opacity: .8;
 }

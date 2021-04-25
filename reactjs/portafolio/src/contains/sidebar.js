@@ -3,6 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { actions } from "../redux/actions/index";
 import cv from '../assets/documents/John Alejandro Hernandez Rodriguez.pdf';
 
+import { NavLink } from 'react-router-dom'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 function Sidebar(props) {
     const settings = useSelector((state) => state.settings);
     const dispatch = useDispatch();
@@ -38,7 +41,15 @@ function Sidebar(props) {
             <nav className="sidebar__nav">
                 <ul className="sidebar__nav-list">
                     <li className="sidebar__nav-list-item">
-                        <a href="none" target="_blank">
+                        <Link
+                            className="cursor-pointer"
+                            activeClass="active"
+                            to="briefcase"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
                             <div className="sidebar__nav-list-contain">
                                 <div className="sidebar__nav-list-item-icon">
                                     <i className="fas fa-briefcase"></i> 
@@ -47,10 +58,18 @@ function Sidebar(props) {
                                     Portafolio
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar__nav-list-item">
-                        <a href="none" target="_blank">
+                        <Link
+                            className="cursor-pointer"
+                            activeClass="active"
+                            to="tools"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
                             <div className="sidebar__nav-list-contain">
                                 <div className="sidebar__nav-list-item-icon">
                                     <i className="fas fa-book-reader"></i> 
@@ -59,10 +78,18 @@ function Sidebar(props) {
                                     Experiencia
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar__nav-list-item">
-                        <a href="none" target="_blank">
+                        <Link
+                            className="cursor-pointer"
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
                             <div className="sidebar__nav-list-contain">
                                 <div className="sidebar__nav-list-item-icon">
                                     <i className="fas fa-mobile"></i> 
@@ -71,7 +98,7 @@ function Sidebar(props) {
                                     Contacto
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="sidebar__nav-list-item">
                         <a href={cv} target="_blank">

@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import Layout from './contains/layout'
+import '../src/sass/style.scss'
+import AppRouter from '../src/routers/appRouter';
 
-import '../src/sass/theme.css'
-import '../src/sass/style.css'
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
   return (
-      <div>
-        <Layout />
-      </div>
+    <AppRouter />
   );
 }
 

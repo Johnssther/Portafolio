@@ -1,0 +1,21 @@
+/* 
+    db 1 bytes
+    dw 2 bytes
+    dd 4 bytes
+    dq 8 bytes
+    ddq 16 bytes
+    dt 10 bytes
+*/
+
+primer forma: msg db "Hola mundo"
+segunda forma: msg db 'H','o','l','a' 
+tercera forma: msg db 'H','o','l',97 
+primer forma: msg db "Hola mundo", 0x0a, 0x0d
+
+int 0x80h
+
+sentinela
+'$'
+linux hay que indicar el numero
+mov edx, 13
+
